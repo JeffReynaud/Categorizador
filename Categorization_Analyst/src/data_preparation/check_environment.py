@@ -46,32 +46,34 @@ def check_required_packages():
 
 def check_file_structure():
     """Verifica la estructura de directorios necesaria."""
+    base_dir = Path(__file__).parent.parent.parent
     required_dirs = [
-        'Categorization_Analyst/data',
-        'Categorization_Analyst/src/data_preparation',
-        'Categorization_Analyst/src/topic_modeling',
-        'Categorization_Analyst/src/visualization',
-        'Categorization_Analyst/notebooks'
+        base_dir / 'data',
+        base_dir / 'src' / 'data_preparation',
+        base_dir / 'src' / 'topic_modeling',
+        base_dir / 'src' / 'visualization',
+        base_dir / 'notebooks'
     ]
     
     missing_dirs = []
     for dir_path in required_dirs:
-        if not Path(dir_path).exists():
-            missing_dirs.append(dir_path)
+        if not dir_path.exists():
+            missing_dirs.append(str(dir_path))
     
     return missing_dirs
 
 def check_input_files():
     """Verifica la existencia de los archivos de entrada necesarios."""
+    base_dir = Path(__file__).parent.parent.parent.parent
     required_files = [
-        'Base/Comentarios_CSAT_Resumen.xlsx',
-        'Base/Ejemplo_Categoria.xlsx'
+        base_dir / 'Base' / 'Comentarios_CSAT_Resumen.xlsx',
+        base_dir / 'Base' / 'Ejemplo_Categoria.xlsx'
     ]
     
     missing_files = []
     for file_path in required_files:
-        if not Path(file_path).exists():
-            missing_files.append(file_path)
+        if not file_path.exists():
+            missing_files.append(str(file_path))
     
     return missing_files
 

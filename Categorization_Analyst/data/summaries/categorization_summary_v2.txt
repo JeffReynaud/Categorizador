@@ -1,0 +1,61 @@
+Resumen de Categorización de Comentarios
+=====================================
+
+Distribución por Categoría:
+------------------------
+Otros: 5664 comentarios
+Proceso_Pago: 557 comentarios
+Precios: 463 comentarios
+Disponibilidad_Vuelo: 273 comentarios
+Datos_Pasajero: 271 comentarios
+Discount_Club: 215 comentarios
+Promociones: 184 comentarios
+Website: 117 comentarios
+Equipaje: 113 comentarios
+Seats: 59 comentarios
+Cambios_Devoluciones: 28 comentarios
+Aeropuerto: 20 comentarios
+
+Distribución por Subcategoría:
+----------------------------
+Precios: 102 comentarios
+Promociones: 99 comentarios
+Equipaje: 86 comentarios
+Disponibilidad_Vuelo: 78 comentarios
+Proceso_Pago: 51 comentarios
+Cambios_Devoluciones: 40 comentarios
+Discount_Club: 34 comentarios
+Seats: 33 comentarios
+Datos_Pasajero: 12 comentarios
+Aeropuerto: 11 comentarios
+Website: 11 comentarios
+
+Distribución por Tipo:
+----------------------
+Oferta: 184 comentarios
+Alto: 86 comentarios
+General: 62 comentarios
+Horarios: 61 comentarios
+Comparación: 30 comentarios
+Error: 29 comentarios
+Bajo: 24 comentarios
+Destinos: 23 comentarios
+Selección: 21 comentarios
+Proceso: 19 comentarios
+Uso: 15 comentarios
+Método: 12 comentarios
+Opciones: 10 comentarios
+Transparencia: 9 comentarios
+Cancelación: 7 comentarios
+Beneficios: 5 comentarios
+Corrección: 5 comentarios
+Devolución: 4 comentarios
+Personal: 4 comentarios
+Exceso: 2 comentarios
+Confirmación: 2 comentarios
+Validación: 2 comentarios
+Conexiones: 1 comentarios
+Tipo: 1 comentarios
+Incompleto: 1 comentarios
+Cambio: 1 comentarios
+Servicios: 1 comentarios

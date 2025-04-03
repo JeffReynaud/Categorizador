@@ -9,11 +9,11 @@ CATEGORIES = {
     },
     'Website': {
         'description': 'Comentarios asociados al proceso de compra general en el sitio web',
-        'types': ['Usabilidad', 'Navegación', 'Error', 'Funcionalidad']
+        'types': ['Usabilidad', 'Navegación', 'Error', 'Funcionalidad', 'Lentitud', 'Confuso', 'Experiencia', 'Login']
     },
     'Proceso_Pago': {
         'description': 'Comentarios asociados específicamente al proceso de pago',
-        'types': ['Error', 'Proceso', 'Método', 'Confirmación']
+        'types': ['Error', 'Proceso', 'Método', 'Confirmación', 'Rechazo']
     },
     'Discount_Club': {
         'description': 'Comentarios relacionados con la membresía Discount Club',
@@ -25,7 +25,7 @@ CATEGORIES = {
     },
     'Precios': {
         'description': 'Comentarios asociados a los precios de vuelos, equipaje, etc.',
-        'types': ['Alto', 'Bajo', 'Comparación', 'Transparencia']
+        'types': ['Alto', 'Bajo', 'Comparación', 'Transparencia', 'Cambia', 'Tarifa']
     },
     'Disponibilidad_Vuelo': {
         'description': 'Comentarios sobre disponibilidad de horarios, destinos o conexiones',
@@ -37,11 +37,11 @@ CATEGORIES = {
     },
     'Seats': {
         'description': 'Temas relacionados con los asientos del avión',
-        'types': ['Selección', 'Comodidad', 'Tipo', 'Ubicación']
+        'types': ['Selección', 'Comodidad', 'Tipo', 'Ubicación', 'Precio']
     },
     'Equipaje': {
         'description': 'Todo lo asociado a los equipajes',
-        'types': ['Permitido', 'Exceso', 'Pérdida', 'Daño']
+        'types': ['Permitido', 'Exceso', 'Pérdida', 'Daño', 'Precio']
     },
     'Cambios_Devoluciones': {
         'description': 'Temas relacionados con cancelaciones y/o devoluciones de vuelos',
@@ -55,62 +55,69 @@ CATEGORIES = {
 
 # Palabras clave para identificar categorías
 KEYWORDS = {
-    'Datos_Pasajero': ['pasajero', 'datos', 'nombre', 'documento', 'identificación'],
-    'Website': ['web', 'sitio', 'página', 'navegación', 'interfaz'],
-    'Proceso_Pago': ['pago', 'tarjeta', 'transferencia', 'factura', 'cobro'],
-    'Discount_Club': ['discount club', 'membresía', 'club', 'beneficios'],
-    'Promociones': ['promoción', 'descuento', 'oferta', 'código', 'cupón'],
-    'Precios': ['precio', 'costo', 'tarifa', 'caro', 'barato'],
-    'Disponibilidad_Vuelo': ['disponible', 'horario', 'vuelo', 'ruta', 'conexión'],
-    'Aeropuerto': ['aeropuerto', 'terminal', 'check-in', 'mostrador'],
-    'Seats': ['asiento', 'silla', 'clase', 'comfort', 'ubicación'],
-    'Equipaje': ['maleta', 'equipaje', 'bagaje', 'valija'],
-    'Cambios_Devoluciones': ['cancelar', 'devolver', 'cambio', 'reembolso'],
+    'Datos_Pasajero': ['pasajero', 'datos', 'nombre', 'documento', 'identificación', 'información'],
+    'Website': ['web', 'sitio', 'página', 'navegación', 'interfaz', 'plataforma', 'sistema', 'pega', 'lento', 'confuso', 'login', 'entrar', 'acceso', 'autenticar', 'confundir', 'experiencia'],
+    'Proceso_Pago': ['pago', 'tarjeta', 'transferencia', 'factura', 'cobro', 'rechazo', 'rechazado', 'rechazan', 'rechazar'],
+    'Discount_Club': ['discount club', 'membresía', 'club', 'beneficios', 'descuento', 'miembro'],
+    'Promociones': ['promoción', 'descuento', 'oferta', 'código', 'cupón', 'rebaja', 'reducción'],
+    'Precios': ['precio', 'costo', 'tarifa', 'caro', 'barato', 'económico', 'costoso', 'aumentan', 'aumento', 'excesivo', 'irracional', 'abusivo'],
+    'Disponibilidad_Vuelo': ['disponible', 'horario', 'vuelo', 'ruta', 'conexión', 'escala'],
+    'Aeropuerto': ['aeropuerto', 'terminal', 'check-in', 'mostrador', 'counter'],
+    'Seats': ['asiento', 'silla', 'clase', 'comfort', 'ubicación', 'selección', 'elegir', 'escoger'],
+    'Equipaje': ['maleta', 'equipaje', 'bagaje', 'valija', 'carry on', 'carry-on', 'mochila', 'bolso'],
+    'Cambios_Devoluciones': ['cancelar', 'devolver', 'cambio', 'reembolso', 'cancelación'],
     'Otros': []
 }
 
 # Palabras clave para identificar tipos
 TYPE_KEYWORDS = {
-    'Validación': ['validar', 'verificar', 'confirmar'],
-    'Error': ['error', 'fallo', 'problema', 'incorrecto'],
-    'Incompleto': ['incompleto', 'faltante', 'pendiente'],
-    'Corrección': ['corregir', 'actualizar', 'modificar'],
-    'Usabilidad': ['fácil', 'difícil', 'intuitivo', 'complejo'],
-    'Navegación': ['navegar', 'menú', 'página', 'sección'],
-    'Funcionalidad': ['funcionar', 'característica', 'opción'],
-    'Proceso': ['proceso', 'paso', 'etapa'],
-    'Método': ['método', 'forma', 'manera'],
-    'Confirmación': ['confirmar', 'verificar', 'comprobar'],
-    'Beneficios': ['beneficio', 'ventaja', 'privilegio'],
-    'Registro': ['registro', 'inscripción', 'afiliación'],
-    'Renovación': ['renovar', 'actualizar', 'renovación'],
-    'Uso': ['usar', 'utilizar', 'aplicar'],
-    'Oferta': ['oferta', 'promoción', 'descuento'],
-    'Descuento': ['descuento', 'reducción', 'rebaja'],
-    'Código': ['código', 'cupón', 'promo'],
-    'Vigencia': ['válido', 'vigente', 'expirar'],
-    'Alto': ['alto', 'caro', 'costoso'],
-    'Bajo': ['bajo', 'barato', 'económico'],
-    'Comparación': ['comparar', 'diferencia', 'otro'],
-    'Transparencia': ['transparente', 'claro', 'visible'],
-    'Horarios': ['hora', 'horario', 'tiempo'],
-    'Destinos': ['destino', 'ruta', 'lugar'],
-    'Conexiones': ['conexión', 'escala', 'parada'],
-    'Opciones': ['opción', 'alternativa', 'disponible'],
-    'Servicios': ['servicio', 'atención', 'asistencia'],
-    'Ubicación': ['ubicación', 'lugar', 'sitio'],
-    'Instalaciones': ['instalación', 'infraestructura', 'facilidad'],
-    'Personal': ['personal', 'empleado', 'staff'],
-    'Selección': ['seleccionar', 'elegir', 'escoger'],
-    'Comodidad': ['cómodo', 'confort', 'espacio'],
-    'Tipo': ['tipo', 'clase', 'categoría'],
-    'Permitido': ['permitido', 'autorizado', 'aceptado'],
-    'Exceso': ['exceso', 'sobrepeso', 'extra'],
-    'Pérdida': ['pérdida', 'extraviado', 'desaparecido'],
-    'Daño': ['daño', 'roto', 'deteriorado'],
-    'Cancelación': ['cancelar', 'cancelación', 'anular'],
-    'Devolución': ['devolver', 'reembolso', 'reembolsar'],
-    'Cambio': ['cambiar', 'modificar', 'alterar'],
-    'Política': ['política', 'norma', 'regla'],
-    'General': ['general', 'otro', 'varios']
+    'Validación': ['validar', 'verificar', 'confirmar', 'validación'],
+    'Error': ['error', 'fallo', 'problema', 'incorrecto', 'falla', 'no funciona'],
+    'Incompleto': ['incompleto', 'faltante', 'pendiente', 'falta'],
+    'Corrección': ['corregir', 'actualizar', 'modificar', 'cambiar'],
+    'Usabilidad': ['fácil', 'difícil', 'intuitivo', 'complejo', 'complicado'],
+    'Navegación': ['navegar', 'menú', 'página', 'sección', 'buscar'],
+    'Funcionalidad': ['funcionar', 'característica', 'opción', 'función'],
+    'Lentitud': ['lento', 'lenta', 'tarda', 'demora', 'pega', 'se pega'],
+    'Confuso': ['confuso', 'confusa', 'confusión', 'difícil de entender', 'confundir', 'entorpecer'],
+    'Experiencia': ['experiencia', 'molesto', 'molesta', 'entorpecer', 'confundir', 'cargado', 'publicidad'],
+    'Login': ['login', 'entrar', 'acceso', 'autenticar', 'autenticación', 'cliente banco', 'tarjeta'],
+    'Proceso': ['proceso', 'paso', 'etapa', 'tramite', 'trámite'],
+    'Método': ['método', 'forma', 'manera', 'medio'],
+    'Confirmación': ['confirmar', 'verificar', 'comprobar', 'confirmación'],
+    'Rechazo': ['rechazo', 'rechazado', 'rechazan', 'rechazar', 'no acepta'],
+    'Beneficios': ['beneficio', 'ventaja', 'privilegio', 'descuento'],
+    'Registro': ['registro', 'inscripción', 'afiliación', 'registrar'],
+    'Renovación': ['renovar', 'actualizar', 'renovación', 'actualización'],
+    'Uso': ['usar', 'utilizar', 'aplicar', 'usar'],
+    'Oferta': ['oferta', 'promoción', 'descuento', 'rebaja'],
+    'Descuento': ['descuento', 'reducción', 'rebaja', 'descuento'],
+    'Código': ['código', 'cupón', 'promo', 'promoción'],
+    'Vigencia': ['válido', 'vigente', 'expirar', 'expiración'],
+    'Alto': ['alto', 'caro', 'costoso', 'elevado', 'muy caro'],
+    'Bajo': ['bajo', 'barato', 'económico', 'accesible'],
+    'Comparación': ['comparar', 'diferencia', 'otro', 'otros'],
+    'Transparencia': ['transparente', 'claro', 'visible', 'entendible'],
+    'Cambia': ['cambia', 'aumenta', 'aumentan', 'varía', 'varían'],
+    'Tarifa': ['tarifa', 'excesivo', 'irracional', 'abusivo', 'aprovechar', 'monopolio'],
+    'Horarios': ['hora', 'horario', 'tiempo', 'disponible'],
+    'Destinos': ['destino', 'ruta', 'lugar', 'ciudad'],
+    'Conexiones': ['conexión', 'escala', 'parada', 'conectar'],
+    'Opciones': ['opción', 'alternativa', 'disponible', 'opciones'],
+    'Servicios': ['servicio', 'atención', 'asistencia', 'ayuda'],
+    'Ubicación': ['ubicación', 'lugar', 'sitio', 'posición'],
+    'Instalaciones': ['instalación', 'infraestructura', 'facilidad', 'equipamiento'],
+    'Personal': ['personal', 'empleado', 'staff', 'atendente'],
+    'Selección': ['seleccionar', 'elegir', 'escoger', 'selección'],
+    'Comodidad': ['cómodo', 'confort', 'espacio', 'comodidad'],
+    'Tipo': ['tipo', 'clase', 'categoría', 'modelo'],
+    'Permitido': ['permitido', 'autorizado', 'aceptado', 'permite'],
+    'Exceso': ['exceso', 'sobrepeso', 'extra', 'sobrepasa'],
+    'Pérdida': ['pérdida', 'extraviado', 'desaparecido', 'perdido'],
+    'Daño': ['daño', 'roto', 'deteriorado', 'maltratado'],
+    'Cancelación': ['cancelar', 'cancelación', 'anular', 'cancelado'],
+    'Devolución': ['devolver', 'reembolso', 'reembolsar', 'devolución'],
+    'Cambio': ['cambiar', 'modificar', 'alterar', 'cambio'],
+    'Política': ['política', 'norma', 'regla', 'condición'],
+    'General': ['general', 'otro', 'varios', 'diversos']
 } 
